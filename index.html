@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DOWWW'S Portfolio</title>
+  <title>DOWWW'S Portofolio</title>
 
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
@@ -19,139 +19,205 @@
 
 
 
+  <style>
+    .typing-text {
+      color: #c701be;
+      display: inline-flex;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid #c701be;
+      width: 0;
+      animation: typing 3.5s steps(8) infinite;
+    }
+
+    @keyframes typing {
+      0% {
+        width: 0;
+      }
+
+      40% {
+        width: 8ch;
+      }
+
+      60% {
+        width: 8ch;
+      }
+
+      100% {
+        width: 0;
+      }
+    }
+  </style>
+
+
+
 
 
   <!-- === HOME SECTION === -->
-  <div class="p-5 text-center bg-image" style="
-      background-image: url('bg.gif');
-      height: 100vh;
-    ">
-    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <div class="text-white">
-          <h1 class="mb-3 fw-bold" style="font-size: 3rem;">Hi, I'm <span
-              style="color: rgb(199, 1, 190);">DOWWW'S</span></h1>
-          <h4 class="mb-3" style="font-size: 23px;">FRONTEND | UI/UX DESIGN</h4>
-          <a href="#about" class="btn rounded-pill" style="background-color:#c701be; color: white;">About me </a>
-          <button data-mdb-ripple-init type="button" class="btn btn-light btn-floating mx-1 mt-2"
-            style="box-shadow: 0 0 20px rgb(255, 0, 255); width: 40px; height: 40px;"><i
-              class="fa-brands fa-instagram fa-xl" style="color: #c701be;"></i></button>
-          <button data-mdb-ripple-init type="button" class="btn btn-light btn-floating mx-1 mt-2"
-            style="box-shadow: 0 0 20px rgb(255, 0, 255); width: 40px; height: 40px;"><i
-              class="fa-brands fa-whatsapp fa-xl" style="color: #c701be;"></i></button>
+  <div class="min-vh-100 d-flex align-items-center text-center"
+    style="background-image:url('bg.gif'); background-size:cover; background-position:center;">
+
+    <div class="w-100 h-100 d-flex align-items-center justify-content-center" style="background-color:rgba(0,0,0,.6);">
+
+      <div class="container px-3">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+
+            <h1 class="fw-bold text-white mb-3" style="font-size:clamp(2rem,5vw,3rem);">
+              Hi, I'm <span class="typing-text">DOWWWS</span>
+            </h1>
+
+            <h4 class="text-white mb-4" style="font-size:clamp(1rem,3vw,1.4rem);">
+              FRONTEND | UI/UX DESIGN
+            </h4>
+
+            <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+              <a href="https://www.instagram.com/sidowwwws" target="_blank"
+                class="btn rounded-circle d-flex justify-content-center align-items-center"
+                style="width:48px;height:48px;background:#c701bd85;box-shadow:0 0 30px #c701be;">
+                <i class="fab fa-instagram fa-lg text-white"></i>
+              </a>
+
+              <a href="https://wa.me/628989209979" target="_blank"
+                class="btn rounded-circle d-flex justify-content-center align-items-center"
+                style="width:48px;height:48px;background:#c701bd85;box-shadow:0 0 30px #c701be;">
+                <i class="fab fa-whatsapp fa-lg text-white"></i>
+              </a>
+
+              <a href="https://github.com/ridhobillah" target="_blank"
+                class="btn rounded-circle d-flex justify-content-center align-items-center"
+                style="width:48px;height:48px;background:#c701bd85;box-shadow:0 0 30px #c701be;">
+                <i class="fab fa-github fa-lg text-white"></i>
+              </a>
+            </div>
+
+            <a href="#about" class="btn rounded-pill px-4 py-2 text-white" style="background:#c701be;">
+              About Me
+            </a>
+
+          </div>
         </div>
       </div>
+
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
   <div id="about" class="min-vh-100 d-flex align-items-center py-5">
-    <div class="container px-4">
-      <div class="row g-5 align-items-center">
-        <!-- Foto Profil -->
+    <div class="container">
+
+      <div class="row align-items-center gy-5">
+
         <div class="col-12 col-md-5 text-center">
-          <!-- Gunakan img dengan kelas MDB: rounded-circle, shadow, dan ukuran maks -->
-          <img src="profil.png" alt="DOWWW'S" class="rounded-circle"
-            style="width: 300px; height: 300px; box-shadow: 0 0 20px rgb(199, 1, 190);" />
+          <img src="profil.png" class="rounded-circle img-fluid" style="max-width:260px; box-shadow:0 0 20px #c701be;">
         </div>
 
-        <!-- Konten About -->
-        <div class="col-12 col-md-7">
-          <h2 class="fw-bold mb-4" style="color: rgb(199, 1, 190);">About me</h2>
-          <p class="lead mb-4">
-            I am Muhammad Ridho Billah, I was born on April 21, 2009, currently I am studying at SMK WIKRAMA BOGOR
-            majoring in Software Development, my hope is to become a reliable and useful programmer.
+        <div class="col-12 col-md-7 px-3 px-md-4 px-lg-5">
+          <h2 class="fw-bold mb-3" style="color:#c701be;">About Me</h2>
+
+          <p class="lead mb-3" style="text-align: justify;">
+            I am Muhammad Ridho Billah, born April 21, 2009, studying Software Development
+            at SMK Wikrama Bogor. My hope is to become a reliable and useful programmer.
           </p>
-          <p class="lead">
-            and I also really like design, that's why I really pay attention to the appearance of my website from the
-            right color combination and perfect layout.
+
+          <p class="lead" style="text-align: justify;">
+            I also really like design, that’s why I pay close attention to the appearance
+            of my website, from color combinations to clean and structured layouts.
           </p>
-          <div class="mt-4">
-            <div class="d-flex align-items-center flex-wrap gap-3">
 
-              <!-- Tombol Sertifikat -->
-              <a href="#certificate" class="btn rounded-pill" style="background-color:#c701be; color: white;">
-                Sertifikat
-              </a>
+          <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
+            <a href="#certificate" class="btn rounded-pill px-4 text-white" style="background:#c701be;">
+              Sertifikat
+            </a>
 
-              <!-- Skills (Icon Only) -->
-              <div class="d-flex align-items-center gap-3">
+            <div class="d-flex flex-wrap gap-3">
+              <i class="fa-brands fa-html5 fa-2x text-danger"></i>
+              <i class="fa-brands fa-css3-alt fa-2x text-primary"></i>
+              <i class="fa-brands fa-js fa-2x text-warning"></i>
+              <i class="fa-brands fa-php fa-2x text-secondary"></i>
+              <i class="fa-brands fa-laravel fa-2x text-danger"></i>
+              <i class="fa-brands fa-figma fa-2x text-dark"></i>
+            </div>
+          </div>
 
-                <i class="fa-brands fa-html5 fa-2xl text-danger"></i>
-                <i class="fa-brands fa-css3-alt fa-2xl text-primary"></i>
-                <i class="fa-brands fa-js fa-2xl text-warning"></i>
-                <i class="fa-brands fa-php fa-2xl text-secondary"></i>
-                <i class="fa-brands fa-laravel fa-2xl text-danger"></i>
-                <i class="fa-brands fa-figma fa-2xl text-dark"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
-              </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="certificate" class="min-vh-100 d-flex align-items-center py-5">
+    <div class="container-fluid px-3 px-md-4">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+
+        <!-- CARD -->
+        <div class="col">
+          <div class="card h-100 text-white" style="background:#c701be;">
+            <img src="WEB.png" class="card-img-top">
+            <div class="card-body">
+              <h6 class="fw-bold">Dasar Programming Web</h6>
+              <a href="WEB.png" class="btn btn-light rounded-pill mt-2">Detail</a>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-
-  <div id="certificate" class="container-fluid min-vh-100 d-flex justify-content-center align-items-center">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 w-100 px-4">
-
-      <div class="col">
-        <div class="card h-100" style="background-color: #c701be;">
-          <img src="WEB.png" class="card-img-top" alt="Hollywood Sign">
-          <div class="card-body">
-            <h5 class="card-title text-white">Dasar programming web</h5>
-            <a href="WEB.png" class="btn rounded-pill" style="background-color:white; color: #c701be;">
-              Detail
-            </a>
+        <div class="col">
+          <div class="card h-100 text-white" style="background:#c701be;">
+            <img src="JS.png" class="card-img-top">
+            <div class="card-body">
+              <h6 class="fw-bold">Dasar JavaScript</h6>
+              <a href="JS.png" class="btn btn-light rounded-pill mt-2">Detail</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card h-100" style="background-color: #c701be;">
-          <img src="JS.png" class="card-img-top" alt="Palm Springs Road">
-          <div class="card-body">
-            <h5 class="card-title text-white">Dasar Javascript</h5>
-            <a href="JS.png" class="btn rounded-pill" style="background-color:white; color: #c701be;">
-              Detail
-            </a>
+        <div class="col">
+          <div class="card h-100 text-white" style="background:#c701be;">
+            <img src="AI.png" class="card-img-top">
+            <div class="card-body">
+              <h6 class="fw-bold">Dasar AI</h6>
+              <a href="AI.png" class="btn btn-light rounded-pill mt-2">Detail</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card h-100" style="background-color: #c701be;">
-          <img src="AI.png" class="card-img-top" alt="Los Angeles Skyscrapers">
-          <div class="card-body">
-            <h5 class="card-title text-white">Dasar AI</h5>
-            <a href="AI.png" class="btn rounded-pill" style="background-color:white; color: #c701be;">
-              Detail
-            </a>
+        <div class="col">
+          <div class="card h-100 text-white" style="background:#c701be;">
+            <img src="k3.png" class="card-img-top">
+            <div class="card-body">
+              <h6 class="fw-bold">K3 (Keselamatan & Kesehatan Kerja)</h6>
+              <a href="k3.png" class="btn btn-light rounded-pill mt-2">Detail</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card h-100" style="background-color: #c701be;">
-          <img src="k3.png" class="card-img-top" alt="Skyscrapers">
-          <div class="card-body">
-            <h5 class="card-title text-white">K3 ( keselamatan, kesehatan kerja )</h5>
-            <a href="k3.png" class="btn rounded-pill" style="background-color:white; color: #c701be;">
-              Detail
-            </a>  
-          </div>
-        </div>
       </div>
 
     </div>
   </div>
-
-
-
-  <!-- MDB JS (diperlukan untuk navbar toggle di mobile) -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.js"></script>
-</body>
-
-</html>
